@@ -43,3 +43,46 @@ header {
         }
     }
 }
+
+/* Wrapper for content */
+.content-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+
+    aside {
+        flex: 1 1 250px;
+        max-width: 250px;
+        padding-right: 16px;
+
+        nav {
+            padding-left: 16px;
+            padding-right: 16px;
+
+            h3 {
+                color: #ecdfcc; /* Light Beige for section headers */
+                font-size: 24px;
+                margin-bottom: 16px;
+            }
+
+            a {
+                display: block;
+                padding: 8px 16px;
+                text-align: left;
+                color: #ecdfcc; /* Light Beige for links */
+                font-size: 16px;
+                margin-bottom: 16px;
+                background-color: #3c3d37; /* Olive Gray background */
+                border-radius: 999px;
+                text-decoration: none;
+                transition: 0.4s;
+
+                &:hover {
+                    background-color: #697565; /* Muted Olive on hover */
+                    color: #181c14; /* Dark Olive Green text on hover */
+                }
+            }
+        }
+    }
+}
