@@ -20,6 +20,10 @@ function App() {
     }
   };
 
+  useEffect(() => {
+    GetTopAnime();
+  }, []);
+
   return (
     <div className="App">
       <Header />
