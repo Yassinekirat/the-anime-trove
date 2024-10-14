@@ -9,7 +9,7 @@ body {
   position: relative; /* Set position to relative for the pseudo-element */
   background-color: #1d1f1b; /* Dark Olive Green background */
   color: #ecdfcc; /* Light Beige text */
-  background-image: url("../144565.jpg"); /* Replace with your image path */
+  background-image: url("../144565.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -46,6 +46,7 @@ header h1 strong {
   flex-direction: row;
   justify-content: space-between;
   margin: 20px;
+  /* Main content area */
 }
 .content-wrap aside {
   flex: 1 1 250px;
@@ -76,4 +77,94 @@ header h1 strong {
 .content-wrap aside nav a:hover {
   background-color: #697565; /* Muted Olive on hover */
   color: #181c14; /* Dark Olive Green text on hover */
+}
+.content-wrap main {
+  flex: 1 1 0%;
+  padding: 0 16px;
+  /* Anime card list */
+}
+.content-wrap main .main-head {
+  display: flex;
+  justify-content: flex-end;
+  /* Updated Style for the search box */
+}
+.content-wrap main .main-head .search-box {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1 1 0%;
+}
+.content-wrap main .main-head .search-box input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #ecdfcc; /* Light Beige background to contrast */
+  border: 1px solid #697565; /* Muted Olive border */
+  border-radius: 5px; /* Slightly rounded corners */
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  color: #3c3d37; /* Olive Gray text for readability */
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.4s, box-shadow 0.3s; /* Smooth transitions */
+  /* Placeholder style */
+  /* Focus/valid states */
+}
+.content-wrap main .main-head .search-box input ::-moz-placeholder {
+  color: #697565; /* Muted Olive placeholder */
+}
+.content-wrap main .main-head .search-box input ::placeholder {
+  color: #697565; /* Muted Olive placeholder */
+}
+.content-wrap main .main-head .search-box input:focus, .content-wrap main .main-head .search-box input:valid {
+  background-color: #ffffff; /* Muted Olive background on focus */
+  border-color: #181c14; /* Dark Olive Green border on focus */
+  color: #181c14; /* Dark Olive Green text on focus */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on focus */
+  outline: none;
+}
+.content-wrap main .anime-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 32px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.content-wrap main .anime-list .anime-card {
+  flex-basis: calc(25% - 16px); /* Adjust for multiple cards per row */
+  max-width: calc(20% - 16px);
+  padding: 8px;
+}
+.content-wrap main .anime-list .anime-card a {
+  text-decoration: none;
+}
+.content-wrap main .anime-list .anime-card figure {
+  display: block;
+  margin-bottom: 16px;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+.content-wrap main .anime-list .anime-card figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+  transition: 0.4s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+  .content-wrap main .anime-list .anime-card figure img {
+    height: 250px;
+  }
+}
+.content-wrap main .anime-list .anime-card h3 {
+  color: #ecdfcc;
+  font-size: 18px;
+  text-align: center;
+}
+.content-wrap main .anime-list .anime-card:hover figure img {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
 }/*# sourceMappingURL=main.css.map */
