@@ -7,7 +7,7 @@
 
 body {
   position: relative; /* Set position to relative for the pseudo-element */
-  background-color: #1d1f1b; /* Dark Olive Green background */
+  background-color: #11120f; /* Dark Olive Green background */
   color: #ecdfcc; /* Light Beige text */
   background-image: url("../144565.jpg");
   background-size: cover;
@@ -26,6 +26,7 @@ body::before {
   z-index: -1; /* Ensure it stays behind other content */
 }
 
+/* Header styles */
 header {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -47,7 +48,6 @@ header h1 strong {
   justify-content: space-between;
   margin: 20px;
   /* Main content area */
-  /* Top Fall Anime Component */
 }
 .content-wrap aside {
   flex: 1 1 250px;
@@ -83,6 +83,7 @@ header h1 strong {
   flex: 1 1 0%;
   padding: 0 16px;
   /* Anime card list */
+  /* Top Fall Anime Component */
 }
 .content-wrap main .main-head {
   display: flex;
@@ -118,7 +119,7 @@ header h1 strong {
   color: #697565; /* Muted Olive placeholder */
 }
 .content-wrap main .main-head .search-box input:focus, .content-wrap main .main-head .search-box input:valid {
-  background-color: #ffffff; /* Muted Olive background on focus */
+  background-color: #697565; /* Muted Olive background on focus */
   border-color: #181c14; /* Dark Olive Green border on focus */
   color: #181c14; /* Dark Olive Green text on focus */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on focus */
@@ -169,7 +170,7 @@ header h1 strong {
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
   transform: scale(1.05);
 }
-.content-wrap .top-fall-anime {
+.content-wrap main .top-fall-anime {
   width: 100%; /* Full width of the parent */
   max-width: 1200px; /* Optional for layout control */
   margin: 32px auto; /* Center with auto margins on left and right */
@@ -179,12 +180,12 @@ header h1 strong {
   background-color: rgba(255, 255, 255, 0.1); /* Light background for visibility */
   text-align: center; /* Center text within cards */
 }
-.content-wrap .top-fall-anime h2 {
+.content-wrap main .top-fall-anime h2 {
   color: #ffffff; /* Light Beige for the title */
   font-size: 24px; /* Title font size */
   margin-bottom: 16px; /* Spacing below title */
 }
-.content-wrap .top-fall-anime .anime-list {
+.content-wrap main .top-fall-anime .anime-list {
   display: flex; /* Ensure this also uses flexbox */
   flex-wrap: wrap; /* Allow wrapping of items */
   overflow-x: auto; /* Enable horizontal scrolling if items exceed container width */
@@ -192,7 +193,7 @@ header h1 strong {
   justify-content: center; /* Center items horizontally */
   width: 100%; /* Full width of the parent */
 }
-.content-wrap .top-fall-anime .anime-list .anime-card {
+.content-wrap main .top-fall-anime .anime-list .anime-card {
   background-color: #3c3d37; /* Olive Gray background */
   border-radius: 8px; /* Rounded corners */
   margin: 8px; /* Space between cards */
@@ -200,22 +201,58 @@ header h1 strong {
   text-align: center; /* Center text inside card */
   cursor: pointer; /* Change cursor to pointer for clickable header */
 }
-.content-wrap .top-fall-anime .anime-list .anime-card .anime-header {
+.content-wrap main .top-fall-anime .anime-list .anime-card .anime-header {
   padding: 10px; /* Add padding for better click area */
   transition: background-color 0.3s;
 }
-.content-wrap .top-fall-anime .anime-list .anime-card .anime-header:hover {
+.content-wrap main .top-fall-anime .anime-list .anime-card .anime-header:hover {
   background-color: #697565; /* Muted Olive on hover */
 }
-.content-wrap .top-fall-anime .anime-list .anime-card .anime-details {
+.content-wrap main .top-fall-anime .anime-list .anime-card .anime-details {
   margin-top: 10px; /* Space between title and details */
   text-align: left; /* Align text to the left for better readability */
 }
-.content-wrap .top-fall-anime .anime-list .anime-card .anime-details img {
+.content-wrap main .top-fall-anime .anime-list .anime-card .anime-details img {
   width: 100%; /* Image full width */
   border-radius: 8px; /* Rounded corners */
   margin-bottom: 8px; /* Space below image */
 }
-.content-wrap .top-fall-anime .anime-list .anime-card:hover {
+.content-wrap main .top-fall-anime .anime-list .anime-card:hover {
   transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+/* Accordion Styles */
+.accordion {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #371a1a; /* Olive Gray */
+  color: #ecdfcc; /* Light Beige */
+}
+.accordion-title h3 {
+  margin-right: auto; /* Pushes the +/- to the right */
+}
+.accordion-title span {
+  font-size: 20px; /* Size of +/- indicator */
+}
+
+.accordion-content {
+  padding-left: 10px; /* Indent content */
+}
+
+/* Button styles */
+button {
+  padding: 10px 15px;
+  background-color: #2e2021; /* Dark Olive Green */
 }/*# sourceMappingURL=main.css.map */
