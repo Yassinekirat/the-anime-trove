@@ -12,21 +12,28 @@ function Sidebar({ topAnime }) {
     }
 
     return topAnime.map((anime) => (
-      <a
-        href={anime.url}
-        target="_blank"
-        key={anime.mal_id}
-        rel="noreferrer"
-      >
-        {anime.title}
-      </a>
+      <div className="anime-item-wrapper" key={anime.mal_id}>
+        <a
+          href={anime.url}
+          target="_blank"
+          rel="noreferrer"
+          className="anime-item" // Added a class to target in SCSS
+          style={{
+            backgroundImage: `url(${anime.images.webp.large_image_url || anime.images.jpg.large_image_url})`,
+          }}
+          aria-label={anime.title} // Added aria-label for accessibility
+        >
+          <span className="sr-only">{anime.title}</span> {/* Visually hidden text */}
+        </a>
+        <h4>{anime.title}</h4> {/* Title outside of the image */}
+      </div>
     ));
   };
 
   return (
     <aside>
       <nav>
-      <h3><strong>Timeless Anime</strong></h3>
+        <h3><strong>Timeless Anime</strong></h3>
         {renderTopAnime()} {/* Display the top anime */}
       </nav>
     </aside>
