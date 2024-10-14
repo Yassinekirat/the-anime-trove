@@ -33,13 +33,13 @@ header {
     padding-bottom: 50px;
 
     h1 {
-        color: #697565; /* Muted Olive for header text */
+        color: #ffffff; /* Muted Olive for header text */
         font-size: 36px;
         font-weight: 400;
         text-align: center;
 
         strong {
-            color: #ecdfcc; /* Light Beige for strong tags */
+            color: #e45c5c; /* Light Beige for strong tags */
         }
     }
 }
@@ -186,5 +186,63 @@ header {
                 } 
             } 
         }
+    }/* Top Fall Anime Component */
+    .top-fall-anime {
+        width: 100%; /* Full width of the parent */
+        max-width: 1200px; /* Optional for layout control */
+        margin: 32px auto; /* Center with auto margins on left and right */
+        display: flex; 
+        flex-direction: column; /* Stack title and anime list vertically */
+        align-items: center; /* Center items vertically */
+        background-color: rgba(255, 255, 255, 0.1); /* Light background for visibility */
+        text-align: center; /* Center text within cards */
+
+        h2 { 
+            color: #ffffff; /* Light Beige for the title */ 
+            font-size: 24px; /* Title font size */ 
+            margin-bottom: 16px; /* Spacing below title */ 
+        } 
+
+        .anime-list { 
+            display: flex; /* Ensure this also uses flexbox */ 
+            flex-wrap: wrap; /* Allow wrapping of items */ 
+            overflow-x: auto; /* Enable horizontal scrolling if items exceed container width */ 
+            padding: 20px; /* Padding for the container */ 
+            justify-content: center; /* Center items horizontally */ 
+            width: 100%; /* Full width of the parent */ 
+
+            .anime-card { 
+                background-color: #3c3d37; /* Olive Gray background */ 
+                border-radius: 8px; /* Rounded corners */ 
+                margin: 8px; /* Space between cards */ 
+                padding: 16px; /* Padding inside the card */ 
+                text-align: center; /* Center text inside card */
+                cursor: pointer; /* Change cursor to pointer for clickable header */
+
+                .anime-header { 
+                    padding: 10px; /* Add padding for better click area */
+                    transition: background-color .3s;
+
+                    &:hover { 
+                        background-color: #697565; /* Muted Olive on hover */
+                    } 
+                } 
+
+                .anime-details { 
+                    margin-top: 10px; /* Space between title and details */
+                    text-align: left; /* Align text to the left for better readability */
+
+                    img { 
+                        width: 100%; /* Image full width */ 
+                        border-radius: 8px; /* Rounded corners */ 
+                        margin-bottom: 8px; /* Space below image */  
+                    }  
+                }
+
+                &:hover {  
+                    transform: scale(1.05); /* Slightly enlarge the card on hover */  
+                }  
+            }  
+        }  
     }
 }
