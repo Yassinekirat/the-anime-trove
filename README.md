@@ -1,9 +1,10 @@
-🎌 TheAnimeTrove 🎌
+## 🎌 TheAnimeTrove 🎌
+
 Welcome to TheAnimeTrove, a React-based web app where users can search and discover anime from the Jikan API (an unofficial MyAnimeList API). Explore timeless anime or search for your favorites!
 
 ![alt text](image.webp)
 
-📜 Table of Contents
+## 📜 Table of Contents
 Project Overview
 Features
 Project Architecture
@@ -18,13 +19,13 @@ TheAnimeTrove provides anime enthusiasts with:
 🏆 A curated list of top timeless anime.
 🔍 A search function to discover new or classic anime by keywords.
 📜 Anime details: Links to anime profiles on MyAnimeList.
-✨ Features
+## ✨ Features
 Anime Search: Search for anime using the search bar.
 Anime List: Display a list of popular timeless anime with cover images.
 Responsive Design: Fully responsive, adapting to all screen sizes.
 Styled Components: With SCSS, animations, and hover effects.
 🏗️ Project Architecture
-Frontend
+## Frontend
 React: Core UI developed with React.
 Main Components:
 Sidebar.js: Displays timeless anime with images and titles.
@@ -33,13 +34,13 @@ AnimeCard.js: Component for each anime result.
 Backend (API)
 The app relies on the Jikan API, a RESTful service that provides anime data from MyAnimeList.
 
-💻 Technologies Used
+## 💻 Technologies Used
 
 React: For the user interface and components.
 SCSS: Used for styles, animations, and hover effects.
 Webpack: Bundles dependencies and optimizes assets.
 Jikan API: Provides anime data, fetching data asynchronously.
-⚙️ Setup Instructions
+## ⚙️ Setup Instructions
 Prerequisites
 Node.js (v12 or higher) and npm must be installed.
 Installation Steps
@@ -66,19 +67,6 @@ Viewing Anime Details: Click on any anime to view more information via MyAnimeLi
 🤝 Contributing
 We welcome contributions from the community!
 
-Fork the repository.
-Create a new feature branch:
-bash
-Copy code
-git checkout -b feature/new-feature
-Commit your changes:
-bash
-Copy code
-git commit -m "Added new feature"
-Push to your branch:
-bash
-Copy code
-git push origin feature/new-feature
-Open a pull request.
+
 📝 License
 This project is licensed under the MIT License.
