@@ -3,7 +3,30 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Fira Sans', sans-serif;
+    
 }
+
+body {
+    position: relative; /* Set position to relative for the pseudo-element */
+    background-color: #1d1f1b; /* Dark Olive Green background */
+    color: #ecdfcc; /* Light Beige text */
+    background-image: url('../144565.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    &::before {
+      content: ''; /* Required for pseudo-elements */
+      position: absolute; /* Position it absolutely within the body */
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity for fading effect */
+      z-index: -1; /* Ensure it stays behind other content */
+    }
+  }
 
 header {
     padding-top: 50px;
