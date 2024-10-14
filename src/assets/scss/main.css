@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+
+body {
+  position: relative; /* Set position to relative for the pseudo-element */
+  background-color: #1d1f1b; /* Dark Olive Green background */
+  color: #ecdfcc; /* Light Beige text */
+  background-image: url("../144565.jpg"); /* Replace with your image path */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body::before {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute; /* Position it absolutely within the body */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity for fading effect */
+  z-index: -1; /* Ensure it stays behind other content */
+}
+
+header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+header h1 {
+  color: #697565; /* Muted Olive for header text */
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+}
+header h1 strong {
+  color: #ecdfcc; /* Light Beige for strong tags */
+}
+
+/* Wrapper for content */
+.content-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
+}
+.content-wrap aside {
+  flex: 1 1 250px;
+  max-width: 250px;
+  padding-right: 16px;
+}
+.content-wrap aside nav {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.content-wrap aside nav h3 {
+  color: #ecdfcc; /* Light Beige for section headers */
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.content-wrap aside nav a {
+  display: block;
+  padding: 8px 16px;
+  text-align: left;
+  color: #ecdfcc; /* Light Beige for links */
+  font-size: 16px;
+  margin-bottom: 16px;
+  background-color: #3c3d37; /* Olive Gray background */
+  border-radius: 999px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.content-wrap aside nav a:hover {
+  background-color: #697565; /* Muted Olive on hover */
+  color: #181c14; /* Dark Olive Green text on hover */
+}/*# sourceMappingURL=main.css.map */
