@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, TextField, Box } from '@mui/material'; // Import necessary components
+import { Grid, TextField, Box } from '@mui/material';
 import AnimeCard from './AnimeCard';
 
 function MainContent({ HandleSearch, search, SetSearch, animeList }) {
@@ -18,7 +18,7 @@ function MainContent({ HandleSearch, search, SetSearch, animeList }) {
               display: 'flex', 
               justifyContent: 'center', 
               padding: '10px', // Add padding around the search box
-              borderRadius: '20px', // Optional: round the entire box
+              borderRadius: '20px', // round the entire box
               backgroundColor: 'black', // Background color for the entire box
               border: '1px solid red',
               width: '115%'
@@ -33,7 +33,6 @@ function MainContent({ HandleSearch, search, SetSearch, animeList }) {
               fullWidth
               variant="outlined" // Use outlined variant for a defined border
               sx={{
-                // Remove height adjustment from here
                 '& .MuiOutlinedInput-root': {
                   '& fieldset': {
                     borderColor: 'transparent', // Make the border of the TextField transparent
