@@ -9,7 +9,7 @@ function TopFallAnime({ topFallAnime }) {
 
   return (
     <div className="top-fall-anime">
-      <h2>Top Anime of the Season</h2>
+      <h2>best Anime of the Season</h2>
       <Accordion>
         {topFallAnime.length > 0 ? (
           topFallAnime.map((anime) => (
