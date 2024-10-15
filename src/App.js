@@ -29,7 +29,7 @@ function App() {
 // Fetch top fall anime (seasonal) with SFW filter
   const GetTopFallAnime = async () => {
     try {
-        const response = await fetch('https://api.jikan.moe/v4/seasons/2024/fall?limit=12&sfw=true');
+        const response = await fetch('https://api.jikan.moe/v4/seasons/2024/fall?limit=14&sfw=true');
         const data = await response.json();
         console.log("Top Fall Anime Data:", data); // Log the entire response
         setTopFallAnime(data.data || []); // Safely set topFallAnime
