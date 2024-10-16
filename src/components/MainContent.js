@@ -45,6 +45,7 @@ function MainContent({ HandleSearch, search, SetSearch, animeList }) {
                   },
                 },
                 // Set background and text color
+                fontFamily: 'Segoe UI, sans-serif',
                 backgroundColor: 'black', // Black background for the input
                 color: 'white', // White text color
                 '& .MuiInputBase-input': {

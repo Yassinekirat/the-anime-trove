@@ -56,6 +56,7 @@ function Sidebar({ topAnime }) {
           component="h3" 
           align="center" // Center the title
           style={{
+            fontFamily: 'Segoe UI, sans-serif',
             fontWeight: 'bold', // Make the title bold
             color: '#ff0000', // Change the color to red for visibility
             marginBottom: '20px', // Add some space below the title
