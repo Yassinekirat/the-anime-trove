@@ -3,13 +3,15 @@ import Accordion from './Accordion/Accordion';
 import AccordionItem from './Accordion/AccordionItem';
 
 function TopFallAnime({ topFallAnime }) {
+  // Truncates the title if it exceeds 25 characters
   const truncateTitle = (title) => {
     return title.length > 25 ? title.slice(0, 25) + '...' : title;
   };
 
   return (
     <div className="top-fall-anime">
-      <h2>best Anime of the Season</h2>
+      {/* Title for the section displaying the best anime of the season */}
+      <h2>Best Anime of the Season</h2>
       <Accordion>
         {topFallAnime.length > 0 ? (
           topFallAnime.map((anime) => (
