@@ -3,6 +3,7 @@ import { AppBar, Toolbar, Box, Button, Typography, Grid } from '@mui/material';
 import { styled } from '@mui/system';
 import { gapi } from 'gapi-script';
 
+// Styled AppBar component
 const StyledAppBar = styled(AppBar)(({ theme }) => ({
   top: 0,
   left: 0,
@@ -11,6 +12,7 @@ const StyledAppBar = styled(AppBar)(({ theme }) => ({
   elevation: 1,
 }));
 
+// Styled Toolbar component
 const StyledToolbar = styled(Toolbar)( {
   display: 'flex',
   justifyContent: 'space-between',
@@ -19,6 +21,7 @@ const StyledToolbar = styled(Toolbar)( {
   height: '64px',
 });
 
+// Styled container for buttons
 const StyledButtonContainer = styled(Box)( {
   display: 'flex',
   gap: '10px',
@@ -28,6 +31,7 @@ const StyledButtonContainer = styled(Box)( {
   top: '-140px',
 });
 
+// Styled Sign Up button
 const StyledSignUpButton = styled(Button)(({ theme }) => ({
   backgroundColor: 'red',
   color: 'white',
@@ -36,6 +40,7 @@ const StyledSignUpButton = styled(Button)(({ theme }) => ({
   },
 }));
 
+// Styled Logout button
 const StyledLogoutButton = styled(Button)(({ theme }) => ({
   backgroundColor: 'black',
   color: 'red',
