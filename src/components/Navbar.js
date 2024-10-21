@@ -11,7 +11,7 @@ const StyledAppBar = styled(AppBar)(({ theme }) => ({
   elevation: 1,
 }));
 
-const StyledToolbar = styled(Toolbar)({
+const StyledToolbar = styled(Toolbar)( {
   display: 'flex',
   justifyContent: 'space-between',
   position: 'relative',
@@ -19,8 +19,7 @@ const StyledToolbar = styled(Toolbar)({
   height: '64px',
 });
 
-
-const StyledButtonContainer = styled(Box)({
+const StyledButtonContainer = styled(Box)( {
   display: 'flex',
   gap: '10px',
   alignItems: 'center',
@@ -50,10 +49,12 @@ const StyledLogoutButton = styled(Button)(({ theme }) => ({
 const clientId = "524908122716-cme5p4ko8ui4hshl33vt46o9asga12cg.apps.googleusercontent.com";
 
 const Navbar = () => {
+  // State to track if the user is logged in and user information
   const [loggedIn, setLoggedIn] = useState(false);
   const [user, setUser] = useState(null);
 
   useEffect(() => {
+    // Initialize Google API client for authentication
     const initClient = () => {
       gapi.load('client:auth2', () => {
         gapi.client.init({
@@ -74,27 +75,32 @@ const Navbar = () => {
     initClient();
   }, []);
 
+  // Callback for successful login
   const onSuccessLogin = (res) => {
     console.log("LOGIN SUCCESS! Current user: ", res.profileObj);
     setUser(res.profileObj);
     setLoggedIn(true);
   };
 
+  // Callback for failed login
   const onFailureLogin = (res) => {
     console.log("LOGIN FAILED! res: ", res);
   };
 
+  // Callback for successful logout
   const onSuccessLogout = () => {
     console.log("LOGOUT SUCCESSFUL!");
     setUser(null);
     setLoggedIn(false);
   };
 
+  // Handle Sign In button click
   const handleSignInClick = () => {
     const authInstance = gapi.auth2.getAuthInstance();
     authInstance.signIn().then(onSuccessLogin).catch(onFailureLogin);
   };
 
+  // Handle Logout button click
   const handleLogoutClick = () => {
     const authInstance = gapi.auth2.getAuthInstance();
     authInstance.signOut().then(onSuccessLogout).catch(err => {

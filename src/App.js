@@ -44,7 +44,7 @@ function App() {
   const getTopFallAnime = async () => {
     setLoading(true);
     try {
-      const response = await fetch('https://api.jikan.moe/v4/seasons/2024/fall?limit=10&sfw=true');
+      const response = await fetch('https://api.jikan.moe/v4/seasons/2024/fall?limit=11&sfw=true');
       const data = await response.json();
       console.log("Top Fall Anime Data:", data);
       setTopFallAnime(data.data || []);
