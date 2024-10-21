@@ -1,7 +1,7 @@
 ## 🎌 TheAnimeTrove 🎌
 Welcome to TheAnimeTrove, a React-based web app where users can search and discover anime from the Jikan API (an unofficial MyAnimeList API). Explore timeless anime or search for your favorites!
 
-![alt text](image.webp)
+![alt text](readme_assets/image.webp)
 
 ## 📜 Table of Contents
 Project Overview
